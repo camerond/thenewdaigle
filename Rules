@@ -1,0 +1,58 @@
+#!/usr/bin/env ruby
+
+# A few helpful tips about the Rules file:
+#
+# * The order of rules is important: for each item, only the first matching
+#   rule is applied.
+#
+# * Item identifiers start and end with a slash (e.g. “/about/” for the file
+#   “content/about.html”). To select all children, grandchildren, … of an
+#   item, use the pattern “/about/*/”; “/about/*” will also select the parent,
+#   because “*” matches zero or more characters.
+
+# TODO
+# precompile: create_month_archives
+
+compile '*' do
+  if item.binary?
+    item.identifier.chop + '.' + item[:extension]
+  else
+    ext = item[:extension].nil? ? nil : item[:extension].split('.').last
+    case ext
+      when 'markdown', 'mk'
+        filter :kramdown
+        filter :rubypants
+        layout 'application'
+      when 'sass'
+        filter :sass
+      when 'js'
+      else
+        filter :haml
+        layout 'application'
+    end
+  end
+end
+
+# route '/archives/*/' do
+#   # chop month and year
+#   # render archives/index with instance variables?
+# end
+
+route '*' do
+  if item.binary?
+    item.identifier.chop + '.' + item[:extension]
+  else
+    ext = item[:extension].nil? ? nil : item[:extension].split('.').last
+    case ext
+      when 'sass'
+        item.identifier.chop + '.css'
+      when 'js'
+        item.identifier.chop + '.' + item[:extension]
+      else
+        item.identifier + 'index.html'
+    end
+  end
+end
+
+layout '*', :haml
+
