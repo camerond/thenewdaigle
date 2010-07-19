@@ -1,40 +1,63 @@
 @import 'mixins'
 
 body
+  background: #fff
+  color: #000
+  font-family: 'Helvetica Neue', Helvetica, Arial
+  border-top: 10px solid #000
 
-.wrapper
+#wrapper
+  position: relative
+  width: 760px
+  overflow: hidden
+
+#content
+  padding: 200px 0 100px 0
+  float: right
+  width: 600px
 
 header
-  display: block
-
+  position: absolute
+  left: 45px
+  top: 0
+  z-index: 100
   h1
-
     a
-
-  nav
-
-    ul
-
-      li
-
-        a
-
-  #account
-
-    ul
-
-      li
-
-        a
-
-#flash
-
-  &.failure
-
-  &.warning
+      display: block
+      width: 100px
+      height: 250px
+      background: url(/assets/images/tnd_logo.png) 3px 45px no-repeat #000
+      text-indent: -6327px
 
 footer
-  display: block
-
-  a
-
+  float: right
+  background: #0698b7
+  width: 115px
+  position: relative
+  p
+    color: #fff
+    font: 11px bold
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+    line-height: 30px
+    text-transform: uppercase
+    font-weight: bold
+    padding-left: 5px
+    padding-bottom: 30px
+    &.production
+      position: absolute
+      left: 0
+      top: 0
+      width: 100px
+      z-index: 99
+      background: #e16b2b
+      padding-top: 300px
+    &.arrival
+      position: absolute
+      left: 0
+      top: 0
+      width: 105px
+      z-index: 98
+      background: #14b56f
+      padding-top: 630px
+    &.title
+      padding-top: 820px

@@ -1,3 +1,14 @@
-.article
-  =link_to('yay', @item.path)
-  =@item.compiled_content
+%article
+  %h1
+    =link_to(@item[:title], @item.path)
+  %h2
+    =Time.parse(@item[:date_created]).strftime('%b')
+    %b
+      =Time.parse(@item[:date_created]).strftime('%d')
+  .copy
+    =@item.compiled_content
+    .meta
+      .author
+        &#8212;
+        =@item[:author]
+      %a(href="#") 0 comments

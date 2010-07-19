@@ -6,16 +6,63 @@ title: "CSS Core"
 @import 'reset'
 @import 'layout'
 
-body
-  margin: 50px
-  background: #333
-  font-family: 'Helvetica Neue', Helvetica, Arial
-
-h1
-  font-size: 42px
-  font-weight: bold
-  color: #999
-
-p
-  font-weight: bold
-  color: #666
+article
+  position: relative
+  h1
+    a
+      display: block
+      margin-bottom: 10px
+      padding-left: 100px
+      text-decoration: none
+      font-size: 36px
+      color: #000
+      &:hover
+        color: #14b56f
+  h2
+    position: absolute
+    left: 0
+    top: 0
+    font-weight: bold
+    text-transform: lowercase
+    background: #000
+    color: #fff
+    padding: 4px 5px 4px 60px
+    text-align: right
+    font-size: 12px
+    b
+      display: block
+      font-size: 16px
+      
+  .copy
+    padding-left: 100px
+    h1
+    h2
+    h3
+    p
+      color: #373737
+      font-size: 14px
+      line-height: 22px
+      margin: 0 10px 20px 10px
+      img
+        margin-left: -10px
+    blockquote
+    b, strong
+    i, em
+  .meta
+    .author
+      float: left
+      font-style: italic
+      font-family: Georgia, serif
+      font-size: 14px
+    a
+      float: right
+      font-size: 10px
+      color: #000
+      text-decoration: none
+      &:hover
+        text-decoration: underline
+section#comments
+  h1
+  .comment
+    .meta
+    .copy

@@ -12,6 +12,7 @@
 
 # TODO
 # precompile: create_month_archives
+# don't publish "published: false"
 
 compile '*' do
   if item.binary?
