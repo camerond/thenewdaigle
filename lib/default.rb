@@ -5,7 +5,11 @@ include Nanoc3::Helpers::LinkTo
 include Nanoc3::Helpers::Rendering
 include Nanoc3::Helpers::Blogging
 require 'fileutils'
+require 'time'
+# lib/default.rb
+
 
 def page_title
   'The New Daigle'
 end
+

@@ -1,0 +1,9 @@
+%html
+  = render '_head'
+  %body
+    = render '_header'
+    #wrapper
+      #content
+        - render '_article' do
+          = @item.compiled_content(:rep => :partial)
+      = render '_footer'

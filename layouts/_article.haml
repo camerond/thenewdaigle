@@ -6,7 +6,7 @@
     %b
       =Time.parse(@item[:date_created]).strftime('%d')
   .copy
-    =@item.compiled_content
+    =yield
     .meta
       .author
         &#8212;

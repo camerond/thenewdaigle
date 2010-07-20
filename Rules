@@ -14,13 +14,24 @@
 # precompile: create_month_archives
 # don't publish "published: false"
 
+compile "/articles/*/", :rep => :partial do
+  filter :kramdown
+  filter :rubypants
+end
+
+compile "/articles/*/", :rep => :default do
+  filter :kramdown
+  filter :rubypants
+  layout 'article'
+end
+
 compile '*' do
   if item.binary?
     item.identifier.chop + '.' + item[:extension]
   else
     ext = item[:extension].nil? ? nil : item[:extension].split('.').last
     case ext
-      when 'markdown', 'mk'
+      when 'markdown'
         filter :kramdown
         filter :rubypants
         layout 'application'
@@ -38,6 +49,9 @@ end
 #   # chop month and year
 #   # render archives/index with instance variables?
 # end
+
+route "/articles/*", :rep => :partial do
+end
 
 route '*' do
   if item.binary?

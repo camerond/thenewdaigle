@@ -5,7 +5,7 @@ namespace :blog do
   desc "Write new article."
   task :new do
 
-    dir = "content/articles/#{Time.now.year}/#{Time.now.strftime('%B')}/"
+    dir = "content/articles/#{Time.now.year}/#{Time.now.strftime('%B').downcase}/"
     filename = dir + 'new_article.markdown'
 
     if File.exists?(filename)
@@ -18,9 +18,10 @@ namespace :blog do
 kind: article
 title: New Article
 author: 
-date-created: #{Time.now}
+date_created: #{Time.now}
 tags:
 published: false
+rep: :default
 ---
 ")
       puts 'New entry created.'
