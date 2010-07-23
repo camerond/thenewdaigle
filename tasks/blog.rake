@@ -1,9 +1,18 @@
 require 'find'
+require 'time'
 
 namespace :blog do
 
   desc "Write new article."
   task :new do
+
+    site = Nanoc3::Site.new('.')
+    site.load_data
+    sorted_articles = site.items.select { |item| item[:kind] == 'article' }.sort_by do |a|
+      time = a[:created_at]
+      time.is_a?(String) ? Time.parse(time) : time
+    end.reverse
+    entry = sorted_articles.first[:entry] + 1
 
     dir = "content/articles/#{Time.now.year}/#{Time.now.strftime('%B').downcase}/"
     filename = dir + 'new_article.markdown'
@@ -15,6 +24,7 @@ namespace :blog do
       FileUtils.mkdir_p(dir)
       file = File.new(filename, 'w')
       file.write("---
+entry: #{entry}
 kind: article
 title: New Article
 author: #{site.config[:author]}
