@@ -2,6 +2,6 @@
 title: Home
 ---
 
-- articles.first(5).each do |a|
+- articles.each do |a|
   - render '_article', :item => a do 
     = a.compiled_content(:rep => :partial)

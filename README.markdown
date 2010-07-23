@@ -1,17 +1,10 @@
 # Thenewdaigle
 
-Nanoc bootstrap.
-
-## instructions
-
-
+A blog about growing a baby, located at [thenewdaigle.com](http://thenewdaigle.com)
 
 ## To Do
 
-- articles section
-- article metadata:
-  - date created
-  - author
-  - tagging?
-- rake task to create article
-- helper for images thru phpthumb
+- image resizing
+- monthly pagination
+- archive page
+- tag pages (perhaps unnecessary)
