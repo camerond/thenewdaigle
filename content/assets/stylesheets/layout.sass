@@ -4,15 +4,17 @@ body
   background: #fdf8db url(../images/tnd_bg.gif) 45px top repeat-y
   color: #000
   font-family: 'Helvetica Neue', Helvetica, Arial
+  -webkit-font-smoothing: antialiased
 
 #wrapper
   position: relative
   width: 760px
   overflow: hidden
 
-#content
-  padding: 200px 0 100px 0
+section#content
+  display: block
   float: right
+  padding: 200px 0 100px 0
   width: 600px
 
 header
@@ -53,10 +55,13 @@ header
       z-index: 100
 
 footer
+  display: block
   float: right
   width: 115px
   position: relative
-  p
+  min-height: 900px 
+  p 
+    hasLayout: true
     color: #fff
     font: 11px bold
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif

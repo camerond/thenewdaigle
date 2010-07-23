@@ -7,15 +7,16 @@ title: "CSS Core"
 @import 'layout'
 
 article
+  display: block
   position: relative
   margin: 0 0 100px 0
   h1
+    display: block
+    margin-bottom: 24px
+    margin-left: 100px
+    font-size: 36px
     a
-      display: block
-      margin-bottom: 10px
-      padding-left: 100px
       text-decoration: none
-      font-size: 36px
       color: #000
       &:hover
         color: #14b56f
@@ -27,7 +28,7 @@ article
     text-transform: lowercase
     background: #000
     color: #fff
-    padding: 4px 5px 4px 60px
+    padding: 4px 5px 4px 56px
     text-align: right
     font-size: 12px
     b
@@ -35,20 +36,29 @@ article
       font-size: 16px
       
   .copy
-    padding-left: 100px
-    // h1
-    // h2
-    // h3
+    margin-left: 100px
+    h1
+      font-size: 26px
+    h2
+      font-size: 20px
+    h3
+      font-size: 16px
     p
       color: #373737
       font-size: 14px
       line-height: 22px
-      margin: 0 10px 20px 10px
       img
         margin-left: -10px
+    a
+      text-decoration: none
+      color: #f26d2e
+      &:hover
+        text-decoration: underline
     // blockquote
     // b, strong
     // i, em
+    h1, h2, h3, p
+      margin: 0 0 22px 0
   .meta
     overflow: hidden
     .author

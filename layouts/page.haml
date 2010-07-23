@@ -4,6 +4,8 @@
     = render '_header'
     #wrapper
       %section#content
-        - render '_article' do
-          = @item.compiled_content(:rep => :partial)
+        %article
+          %h1= @item[:title]
+          .copy
+            = yield
       = render '_footer'

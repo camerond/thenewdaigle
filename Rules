@@ -34,7 +34,7 @@ compile '*' do
       when 'markdown'
         filter :kramdown
         filter :rubypants
-        layout 'application'
+        layout 'page'
       when 'sass'
         filter :sass
       when 'js'
