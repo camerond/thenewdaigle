@@ -17,7 +17,7 @@ namespace :blog do
       file.write("---
 kind: article
 title: New Article
-author: 
+author: #{site.config[:author]}
 date_created: #{Time.now}
 tags:
 published: false

@@ -13,4 +13,8 @@ This is our first human-creation, so it should definitely generate some interest
 
 ### An Awfully Boring Technical Postscript Follows
 
-This site is a fairly experimental beast, built on [Nanoc,](http://nanoc.stoneship.org/) a static site generator built in Ruby. I (Cameron) will be building in features as I feel fit; or I may just chuck the whole thing and retreat to Tumblr -- the mystery is part of the suspense, man.
+This site is a fairly experimental beast, built on [Nanoc,](http://nanoc.stoneship.org/) a static site generator built in Ruby. 
+
+I (Cameron) will be building in features as I feel fit; or I may just chuck the whole thing and retreat to Tumblr -- the mystery is part of the suspense, man.
+
+I'll get the source up on Github shortly -- and yes, that means I'm teaching my wife how to use Git (she already knew how to use Markdown, by the way). Technology!

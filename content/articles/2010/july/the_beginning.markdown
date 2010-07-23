@@ -14,7 +14,7 @@ The beginning of a journey.
 
 Here he/she is, helpfully labeled via the hospital's imaging software.
 
-The New Daigle is on the way, with a heartbeat (that we could hear via the sonogram – so fast, an excited patter) – and fingers. The books say that TND will be able to hear sounds in the next couple of weeks.
+The New Daigle is on the way, with a heartbeat (that we could hear via the sonogram -- so fast, an excited patter) -- and fingers. The books say that TND will be able to hear sounds in the next couple of weeks.
 
 The books also say TND is the size of a lima bean, which is a strange measurement tool; by the time I write this, TND is probably the size of a butterbean?
 
