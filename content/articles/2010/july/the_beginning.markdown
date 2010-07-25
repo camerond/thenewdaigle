@@ -3,7 +3,7 @@ kind: article
 entry: 1
 title: The Beginning
 author: Cameron
-date_created: Thu Jul 22 23:28:29 -0400 2010
+created_at: Thu Jul 22 23:28:29 -0400 2010
 tags:
 published: false
 rep: :default

@@ -28,7 +28,7 @@ entry: #{entry}
 kind: article
 title: New Article
 author: #{site.config[:author]}
-date_created: #{Time.now}
+created_at: #{Time.now}
 tags:
 published: false
 rep: :default

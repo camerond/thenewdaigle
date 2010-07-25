@@ -2,9 +2,9 @@
   %h1
     =link_to(@item[:title], @item.path)
   %h2
-    =Time.parse(@item[:date_created]).strftime('%b')
+    =Time.parse(@item[:created_at]).strftime('%b')
     %b
-      =Time.parse(@item[:date_created]).strftime('%d')
+      =Time.parse(@item[:created_at]).strftime('%d')
   .copy
     =yield
     .meta
