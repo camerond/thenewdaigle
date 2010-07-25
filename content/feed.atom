@@ -1,0 +1,7 @@
+---
+title: The New Daigle
+author_name: Cameron & Shannon Daigle
+author_uri: http://thenewdaigle.com
+---
+
+= atom_feed(:limit => 15)
