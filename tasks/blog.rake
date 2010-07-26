@@ -26,12 +26,12 @@ namespace :blog do
       file.write("---
 entry: #{entry}
 kind: article
-title: New Article
+rep: :default
 author: #{site.config[:author]}
 created_at: #{Time.now}
+title: New Article
 tags:
 published: false
-rep: :default
 ---
 ")
       puts 'New entry created.'

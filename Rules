@@ -47,11 +47,6 @@ compile '*' do
   end
 end
 
-# route '/archives/*/' do
-#   # chop month and year
-#   # render archives/index with instance variables?
-# end
-
 route "/articles/*", :rep => :partial do
 end
 
