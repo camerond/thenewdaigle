@@ -6,5 +6,6 @@
       %section#content
         - render '_article' do
           = @item.compiled_content(:rep => :partial)
+        = render '_article_siblings', :article => @item
         = render '_comments'
       = render '_footer'

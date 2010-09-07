@@ -1,0 +1,17 @@
+- if has_next_article?(article)
+  %nav.next_articles
+    %h3 Next on TND:
+    %ul
+      -next_articles(article, 3).each do |a|
+        %li
+          %b=Time.parse(a[:created_at]).strftime('%b %d:')
+          =link_to a[:title], a.path
+- if has_previous_article?(article)
+  %nav.previous_articles
+    %h3 Previously on TND:
+    %ul
+      -previous_articles(article, 3).each do |a|
+        %li
+          %b=Time.parse(a[:created_at]).strftime('%b %d:')
+          =link_to a[:title], a.path
+  

@@ -9,7 +9,7 @@ title: "CSS Core"
 article
   display: block
   position: relative
-  margin: 0 0 100px 0
+  margin: 0 0 80px 0
   h1
     display: block
     margin-bottom: 24px
@@ -91,7 +91,28 @@ article
       &:hover
         text-decoration: underline
 
+nav.next_articles,
+nav.previous_articles
+  margin: 0 0 40px 100px
+  h3
+    font-size: 20px
+    margin: 0 0 20px 0
+  ul
+    li
+      b
+        font-size: 11px
+      a
+        color: #14b56f
+        text-decoration: none
+        &:hover
+          text-decoration: underline
+
+nav.previous_articles
+  ul li a
+    color: #f26d2e
+
 section#disqus_thread
+  padding-top: 40px
   margin-left: 100px
   #dsq-content
     div#dsq-global-toolbar,
