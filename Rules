@@ -12,7 +12,10 @@
 
 # TODO
 # precompile: create_month_archives
-# don't publish "published: false"
+
+preprocess do
+  items.delete_if { |item| item[:publish] == false }
+end
 
 compile "/articles/*/", :rep => :partial do
   filter :kramdown
