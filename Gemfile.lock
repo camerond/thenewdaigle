@@ -1,0 +1,41 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    adsf (1.0.1)
+      rack (>= 1.0.0)
+    cgi_multipart_eof_fix (2.5.0)
+    cri (1.0.1)
+    daemons (1.1.0)
+    fastthread (1.0.7)
+    gem_plugin (0.2.3)
+    haml (3.0.12)
+    kramdown (0.9.0)
+    mime-types (1.16)
+    mongrel (1.1.5)
+      cgi_multipart_eof_fix (>= 2.4)
+      daemons (>= 1.0.3)
+      fastthread (>= 1.0.1)
+      gem_plugin (>= 0.2.3)
+    nanoc (3.1.3)
+      nanoc3 (>= 3.1.3)
+    nanoc3 (3.1.3)
+      cri (>= 1.0.0)
+    rack (1.2.1)
+    rake (0.8.7)
+    rubypants (0.2.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  adsf (= 1.0.1)
+  cri (= 1.0.1)
+  haml (= 3.0.12)
+  kramdown (= 0.9.0)
+  mime-types (= 1.16)
+  mongrel (= 1.1.5)
+  nanoc (= 3.1.3)
+  nanoc3 (= 3.1.3)
+  rack (= 1.2.1)
+  rake (= 0.8.7)
+  rubypants (= 0.2.0)
