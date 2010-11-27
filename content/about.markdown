@@ -11,10 +11,16 @@ The New Daigle is a blog about a reasonably intelligent, stunningly adorable cou
 
 This is our first human-creation, so it should definitely generate some interesting storytelling. We hope you enjoy.
 
+### Registries
+
+You're welcome to contribute to our baby-raising supply depot via the following links:
+
+- [Target](http://www.target.com/registry/baby/3PQNT6NQV6XWK)
+- [Babies R Us](http://vurl.me/XMD)
+
 ### An Awfully Boring Technical Postscript Follows
 
-This site is a fairly experimental beast, built on [Nanoc,](http://nanoc.stoneship.org/) a static site generator built in Ruby. 
+This site is powered by [Nanoc,](http://nanoc.stoneship.org/) a static site generator built in Ruby. 
 
-I (Cameron) will be building in features as I feel fit; or I may just chuck the whole thing and retreat to Tumblr -- the mystery is part of the suspense, man.
+[Here's the source, if you're interested](https://github.com/camerond/thenewdaigle) -- and yes, that means I'm teaching my wife how to use Git (she already knew how to use Markdown, by the way). Technology!
 
-I'll get the source up on Github shortly -- and yes, that means I'm teaching my wife how to use Git (she already knew how to use Markdown, by the way). Technology!
