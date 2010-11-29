@@ -11,4 +11,4 @@
       .author
         &#8212;
         =@item[:author]
-      =link_to('Permalink', @item.path + '#disqus_thread')
+      =link_to 'Permalink', @item.path + '#disqus_thread', :'data-disqus-identifier' => "article_#{@item[:entry]}"
