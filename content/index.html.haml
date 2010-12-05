@@ -3,6 +3,14 @@ title: Home
 published: true
 ---
 
-- sorted_articles.select{|a| a[:published] == true}.each do |a|
+- sorted_articles.first(5).select{|a| a[:published] == true}.each do |a|
   - render '_article', :item => a do 
     = a.compiled_content(:rep => :partial)
+
+%nav.previous_articles
+  %h3 Previously On TND:
+  %ul
+    - sorted_articles.drop(5).select{|a| a[:published] == true}.each do |a|
+      %li
+        %b=Time.parse(a[:created_at]).strftime('%b %d:')
+        =link_to a[:title], a.path, {:class => a[:author].downcase}
