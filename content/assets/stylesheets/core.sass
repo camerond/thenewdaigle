@@ -18,8 +18,6 @@ article
     a
       text-decoration: none
       color: #000
-      &:hover
-        color: #14b56f
   h2
     position: absolute
     left: 0
@@ -34,10 +32,18 @@ article
     b
       display: block
       font-size: 16px
-  &.shannon h2
-    border-right: 5px solid #a7be36
-  &.cameron h2
-    border-right: 5px solid #56afd2
+  &.shannon
+    h1
+      a:hover
+        color: #a7be36
+    h2
+      border-right: 5px solid #a7be36
+  &.cameron
+    h1
+      a:hover
+        color: #56afd2
+    h2
+      border-right: 5px solid #56afd2
       
   .copy
     margin-left: 100px

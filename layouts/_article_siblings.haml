@@ -5,7 +5,7 @@
       -next_articles(article, 3).each do |a|
         %li
           %b=Time.parse(a[:created_at]).strftime('%b %d:')
-          =link_to a[:title], a.path
+          =link_to a[:title], a.path, {:class => a[:author].downcase}
 - if has_previous_article?(article)
   %nav.previous_articles
     %h3 Previously on TND:
@@ -13,5 +13,5 @@
       -previous_articles(article, 3).each do |a|
         %li
           %b=Time.parse(a[:created_at]).strftime('%b %d:')
-          =link_to a[:title], a.path
+          =link_to a[:title], a.path, {:class => a[:author].downcase}
   
